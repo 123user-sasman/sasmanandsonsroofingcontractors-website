@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sasman & Sons Roofing and Ceilings</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#hero" id="navbar__logo">Sasman & Sons Roofing Contractors CC</a>
+
+      <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#hero" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="#services" class="navbar__links">Services</a></li>
+        <li class="navbar__item"><a href="#about" class="navbar__links">About us</a></li>
+        <li class="navbar__btn"><a href="#contact" class="button">Get In Touch</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <div class="main" id="hero">
+    <div class="main__container">
+      <div class="main__content">
+        <h1>SASMAN AND SONS ROOFING AND CEILING</h1>
+        <p>For all types of roofing, roof repairs, and waterproofing</p>
+
+        <button class="main__btn">
+          <a href="#services">Let's Get Work Done</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <h1>What Services Do We Offer?</h1>
+
+    <div class="services__container">
+      <div class="services__card" data-message="I need Reroofing services.">
+        <h2>Reroofing</h2>
+        <p>Replacing old roofs with new, durable roofing systems.</p>
+      </div>
+
+      <div class="services__card" data-message="I need Roof Tile Repairs.">
+        <h2>Roof Tile Repairs</h2>
+        <p>Professional tile repairs, replacement, and maintenance.</p>
+      </div>
+
+      <div class="services__card" data-message="I need Waterproofing services.">
+        <h2>Waterproofing</h2>
+        <p>Leak-proof waterproofing solutions backed by experience.</p>
+      </div>
+
+      <div class="services__card" data-message="I need Trusses supplied and installed.">
+        <h2>Trusses</h2>
+        <p>Supply and installation of strong and reliable roof trusses.</p>
+      </div>
+
+      <div class="services__card" data-message="I need Ceiling installation or repairs.">
+        <h2>Ceilings</h2>
+        <p>High-quality ceiling installations and repairs.</p>
+      </div>
+
+      <div class="services__card" data-message="I need Painting services.">
+        <h2>Paint Work</h2>
+        <p>Weather-resistant painting services for roofs and walls.</p>
+      </div>
+
+      <div class="services__card" data-message="I need Roof Cleaning & Spraying.">
+        <h2>Roof Cleaning & Spraying</h2>
+        <p>Deep cleaning and coating to extend the life of your roof.</p>
+      </div>
+
+      <div class="services__card" data-message="I need new Gutters installed or old ones repaired.">
+        <h2>Gutters</h2>
+        <p>Gutter installation, supply, and maintenance for proper drainage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <h1>CONTACT US TODAY</h1>
+    <div class="contact-container">
+
+      <!-- Contact Info -->
+      <ul class="contact-info-list">
+        <li class="contact-info">
+          <i class="fas fa-map-marker-alt"></i>
+          <h4>20 Misrole Avenue, Cape Town 7760</h4>
+        </li>
+
+        <li class="contact-info">
+          <i class="fas fa-envelope"></i>
+          <h4><a href="mailto:sasmanandsonsroofing@gmail.com">sasmanandsonsroofing@gmail.com</a></h4>
+        </li>
+
+        <li class="contact-info">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3><a href="tel:+27832842639">Siraaj Sasman</a></h3>
+            <h4><a href="tel:+27832842639">+27 83 284 2639</a></h4>
+          </div>
+        </li>
+
+        <li class="contact-info">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3><a href="tel:+27829574958">Majidee Sasman</a></h3>
+            <h4><a href="tel:+27829574958">+27 82 957 4958</a></h4>
+          </div>
+        </li>
+
+        <li class="contact-info">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3><a href="tel:+27217038392">Office Phone</a></h3>
+            <h4><a href="tel:+27217038392">+27 21 703 8392</a></h4>
+          </div>
+        </li>
+
+        <li class="contact-info">
+          <i class="fa-regular fa-clock"></i>
+          <h4>Monday - Friday: 8:00AM - 5:00PM</h4>
+        </li>
+
+        <li class="contact-info">
+          <i class="fa-regular fa-clock"></i>
+          <h4>Saturday - Sunday: CLOSED</h4>
+        </li>
+      </ul>
+
+<!-- CONTACT FORM -->
+      <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); whatsapp();">
+
+          <input type="text" id="user_name" placeholder="Full Name *" class="form-input" required>
+          <input type="email" id="user_email" placeholder="Email Address *" class="form-input" required>
+          <input type="tel" id="user_phone" placeholder="Phone Number *" class="form-input" required>
+          <input type="text" id="user_address" placeholder="Address (optional)" class="form-input">
+
+          <select id="service_type" required>
+            <option disabled selected>Select Service Type *</option>
+            <option>Reroofing</option>
+            <option>Roof Tile Repairs</option>
+            <option>Waterproofing</option>
+            <option>Trusses</option>
+            <option>Ceilings</option>
+            <option>Paint Work</option>
+            <option>Roof Cleaning & Spraying</option>
+            <option>Gutters</option>
+          </select>
+
+          <textarea id="contact-message" placeholder="Let us know how we can provice our service? *" class="form-input" required></textarea>
+
+          <button type="submit" class="form-button">Send via WhatsApp</button>
+
+          <script>
+            function whatsapp() {
+
+              // Get form values
+              var name = document.getElementById("user_name").value;
+              var email = document.getElementById("user_email").value;
+              var phone = document.getElementById("user_phone").value;
+              var address = document.getElementById("user_address").value;
+              var serviceType = document.getElementById("service_type").value;
+              var message = document.getElementById("contact-message").value;
+
+              // Build clean message with manual line breaks
+              var whatsappMessage =
+                "New Roofing Inquiry\n\n" +
+                "Customer Name: " + name + "\n" +
+                "Email: " + email + "\n" +
+                "Phone: " + phone + "\n" +
+                "Address: " + address + "\n" +
+                "Service Type: " + serviceType + "\n" +
+                "Message: " + message;
+
+              // Replace new lines with WhatsApp's required %0A
+              whatsappMessage = whatsappMessage.replace(/\n/g, "%0A");
+
+              // WhatsApp URL
+              var whatsappURL = "https://wa.me/27832842639?text=" + whatsappMessage;
+
+              // Open WhatsApp
+              window.open(whatsappURL, "_blank");
+
+              // Success popup
+              var popup = document.getElementById("success-popup");
+              popup.style.display = "flex";
+
+              setTimeout(() => {
+                popup.style.display = "none";
+              }, 3000);
+            }
+          </script>
+
+      </form>
+    </div>
+
+    <div id="success-popup" class="popup">
+      <div class="popup-content">
+        <i class="fas fa-check-circle"></i>
+        <p>WhatsApp opened — check your app to send the message.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <h1>About Us</h1>
+    <div class="about__container">
+
+      <div class="about__text">
+        <h2>Who We Are</h2>
+
+        <p>
+          Sasman & Sons Roofing and Ceilings is a proudly family-owned roofing company based in Cape Town, South Africa, with a heritage that stretches back to 1962.
+          What started as a small local operation has grown into a trusted and well-established name in the roofing and construction industry.
+          For more than six decades, we have remained committed to delivering reliable, high-quality workmanship backed by honesty, consistency, and a passion for excellence.
+        </p>
+
+        <p>
+          Our team specializes in a comprehensive range of services, including new roof installations, complete roof replacements, detailed roof repairs,
+          waterproofing, ceiling installations and repairs, carpentry, structural alterations, and the supply and installation of precision-engineered
+          roof trusses. We combine generations of hands-on experience with modern materials and innovative techniques to ensure every project meets strict industry
+          standards for safety, durability, and long-term performance.
+        </p>
+
+        <p>
+          At Sasman & Sons, we understand that every roof plays a vital role in protecting a home or business. That is why we approach each project—big or small—with the same level of
+          professionalism, care, and attention to detail. Our goal is to provide clients with dependable solutions, transparent communication, and results that stand the test of time.
+          With a long history of satisfied customers, we strive to maintain the highest level of service and continue building roofs and relationships that last for generations.
+        </p>
+      </div>
+
+      <div class="about__img">
+        <img src="Images/sasman & sons ROOfing and ceilings.jpg" alt="About Us Image">
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p>COPYRIGHT © SINCE 2025. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="footer__policy">
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
